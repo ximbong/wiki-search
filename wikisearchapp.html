@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet" type='text/css'>
+   <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="wiki.js"></script>
+
+<style>
+body {
+background-color: #DAF7A6;
+}
+.header {
+margin-top: 3%;
+}
+.wiki {
+text-transform: uppercase;
+font-family: Times New Roman;
+font-size: 32px;
+font-weight: 400;
+}
+
+#logo {
+width: 60px;
+vertical-align: -13px;
+}
+
+.first {
+font-size: 45px;
+}
+
+.read-random {
+margin-top: 30px;
+margin-bottom: 20px;
+}
+
+a {
+color: black;
+}
+
+a:link {
+text-decoration: none;
+}
+
+a:hover {
+color: #154360;
+}
+
+.search {
+margin-bottom: 30px;
+}
+#search {
+background-color: #A04000;
+color: #D6DBDF;
+cursor: pointer;
+}
+
+.form {
+border-radius: 5px;
+}
+
+.res {
+border: 1px solid black;
+border-radius: 3px;
+padding: 5px 10px;
+margin-top: 10px;
+background-color: #21618C;
+color: #D6EAF8;
+}
+
+.res:hover {
+background-color:#13013a;
+}
+
+#intro {
+font-style: italic;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="wiki text-center">  <span class="first">W</span></i>ikipedi<span class="first">A</span> search</h1>
+    </div>
+    <div class="text-center read-random">
+      <a href="https://en.wikipedia.org/wiki/Special:Random"> <i class="fa fa-wikipedia-w" aria-hidden="true"></i> Click <strong>here</strong> for a random article</a>
+    </div>
+
+    <div class="text-center search">
+      <h4>Search for an article</h4>
+      <input type="text" class="form" id="search-value" />
+      <button id="search" class="btn" type="submit"> Submit </button>
+    </div>
+
+    <ul id="output">
+      <p id="intro"></p>
+      <!--     <li class="list-unstyled res"></li> -->
+
+
+    </ul>
+  </div>
+
+
+
+</body>
+</html>
